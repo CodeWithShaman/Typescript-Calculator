@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="cal">
+            <div id="targetDisplay" class="display"></div>
+            <div class="buttons">
+                <div class="top">
+                    <button onclick="clearDisplay('')" class="mini_buttons">C</button>
+                    <button onclick="calFunc('%')" class="mini_buttons">%</button>
+                    <button onclick="calFunc('/')" class="mini_buttons">÷</button>
+                    <button onclick="calFunc('*')" class="mini_buttons">×</button>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <button onclick="addValue('7')" class="mini_buttons">➐</button>
+                        <button onclick="addValue('8')" class="mini_buttons">➑</button>
+                        <button onclick="addValue('9')" class="mini_buttons">➒</button>
+                        <button onclick="addValue('4')" class="mini_buttons">➍</button>
+                        <button onclick="addValue('5')" class="mini_buttons">➎</button>
+                        <button onclick="addValue('6')" class="mini_buttons">➏</button>
+                        <button onclick="addValue('1')" class="mini_buttons">➊</button>
+                        <button onclick="addValue('2')" class="mini_buttons">➋</button>
+                        <button onclick="addValue('3')" class="mini_buttons">➌</button>
+                        <button onclick="addValue('00')" class="mini_buttons">⓿⓿</button>
+                        <button onclick="addValue('0')" class="mini_buttons">⓿</button>
+                        <button onclick="addValue('.')" class="mini_buttons">.</button>
+                    </div>
+                    <div class="right">
+                        <button onclick="calFunc('-')" class="mini_buttons">-</button>
+                        <button onclick="calFunc('+')" class="mini_buttons">+</button>
+                        <button onclick="action()" class="equal_button">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="type.js"></script>
+</body>
+</html>

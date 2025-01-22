@@ -1,0 +1,136 @@
+:root {
+    --black: #0c7e9b9a;
+    --blue: #01affe;
+    --white: rgb(0, 0, 0);
+    --grey: #323449;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal {
+    width: 20%;
+    height: 550px;
+    border: 2px solid var(--blue);
+    overflow: hidden;
+}
+@media (min-width: 320px) and (max-width: 1480px) {
+    .cal {
+        width: 85%;
+        height: 550px;
+        border: 2px solid var(--blue);
+        overflow: hidden;
+    }
+    .main {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        /* align-items: center; */
+    /* } */
+  }
+
+.cal .display {
+    width: 100%;
+    height: 150px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 32px;
+    color: var(--white);
+    padding: 15px;
+}
+
+
+.cal .buttons {
+    width: 100%;
+    height: 400px;
+}
+
+.cal .buttons .top {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.cal .buttons .top .mini_buttons {
+    width: 25%;
+    height: 80px;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: var(--blue);
+}
+.cal .buttons .top .mini_buttons :focus{
+  background-color: rebeccapurple;
+}
+
+.cal .bottom {
+    width: 100%;
+    height: 320px;
+    display: flex;
+}
+
+.cal .bottom .left {
+    width: 75%;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--black);
+}
+
+.cal .bottom .right {
+    width: 25%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cal .bottom .right .mini_buttons{
+    width: 100%;
+    height: 80px;
+    background-color: var(--grey);
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.cal .bottom .right .equal_button{
+    width: 100%;
+    height: 160px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal .bottom .left .mini_buttons{
+    width: 33.3%;
+    height: 80px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}}
