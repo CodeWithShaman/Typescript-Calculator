@@ -25,7 +25,7 @@
     border: 2px solid var(--blue);
     overflow: hidden;
 }
-@media (min-width: 320px) and (max-width: 1480px) {
+@media (min-width: 320px) and (max-width: 1680px) {
     .cal {
         width: 85%;
         height: 550px;
